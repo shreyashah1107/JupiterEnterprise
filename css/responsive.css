@@ -1,13 +1,30 @@
-/* XX-Large devices (larger desktops, 1400px and up) */
+/* XX-Large devices (larger desktops, 1199.98px and up) */
 
-@media (min-width: 1400px) {
-	
+@media (min-width: 1199.98px) {
+	.reasonTwo,
+	.reasonThree {
+	    margin-top: 20px;
+	}
+
+	.reasonFive {
+	    margin-top: 40px;
+	}
+
+	.reasonSix {
+	    margin-top: 60px;
+	}
 }
 
 /* Large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.98px) {
-	
+	.reasons p {
+		display: -webkit-box;
+	    -webkit-line-clamp: 4;
+	    -webkit-box-orient: vertical;  
+	    overflow: hidden;
+	    min-height: 76px;
+	}
 }
 
 /*(More than 992px)*/
@@ -19,57 +36,21 @@
 /* Medium devices (tablets, less than 992px) */
 
 @media (max-width: 991.98px) {
-	.slick-prev,
-	.slick-next {
-		top: 50%;
-		bottom: auto;
-	}
-	.slick-prev {
-		left: -25px;
-	}
-	.slick-next {
-		right: -25px;
-	}
-}
-
-/* Small devices (landscape phones, less than 768px) */
-
-@media (max-width: 767.98px) {
-	header .navbar.navbar-light .navbar-nav .nav-item {
-	    padding: 10px;
-	}
-	.banner {
-		padding: 60px 0;
-		height: auto;
-	}
-	.banner-title {
-		font-size: 30px;
-	}
-	.banner-description {
-		font-size: 16px;
-	}
-	.section-title {
-    	font-size: 30px;
-    }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-	header .navbar.navbar-light {
-		padding: 10px 15px;
-	}
 	header .navbar.navbar-light .navbar-collapse {
 	    position: absolute;
-	    top: 67px;
+	    top: 80px;
 	    left: 0;
 	    right: 0;
 	    padding: 0 16px;
 	    background: #fff;
 	    box-shadow: 0px 6px 14px -6px rgba(0, 0, 0, 0.17);
-	}	
+	}
 	header .navbar.navbar-light .navbar-nav .nav-item {
-	    padding: 8px 0;
-	    font-size: 14px;
+	    padding: 10px;
+	    font-size: 16px;
+	}
+	header .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+	    padding: 0;
 	}
 	header .navbar.navbar-light .navbar-nav .nav-item.dropdown .dropdown-menu, 
 	header .navbar.navbar-light .navbar-nav .nav-item.dropdown .dropdown-menu:hover, 
@@ -88,7 +69,58 @@
     	color: #fff;
 	    font-size: 14px;
 	}
+	header .navbar.navbar-light .navbar-nav .nav-item .nav-link:after {
+		display: none;
+	}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+	.section-title {
+    	font-size: 30px;
+    }
+    .counts {
+    	margin: 0;
+    	padding-top: 50px;
+    }
+    .counts .count-box span {
+    	font-size: 24px;
+    }
+    .counts .count-box p {
+	    font-size: 14px;
+	}
+	.counts .count-box i {
+    	font-size: 30px;
+    }
+    .counts .count-box {
+    	padding: 20px;
+    }
+    .reasons {
+    	align-items: center;
+    	margin-bottom: 20px;
+    }
+    .reasons p {
+	    min-height: auto;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	header .navbar.navbar-light {
+		padding: 10px 15px;
+	}
+	header .navbar.navbar-light .navbar-nav .nav-item {
+	    padding: 8px 0;
+	    font-size: 14px;
+	}
+	header .navbar.navbar-light .navbar-collapse {
+	    top: 40px;
+	}
 	.img-logo {
-		height: 50px;
+		height: 40px;
+	}
+	.card-uniform img {
+	    height: 100px;
 	}
 }
