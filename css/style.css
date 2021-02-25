@@ -72,6 +72,10 @@ a:focus {
 	padding: 80px 0;
 }
 
+.section-bottom-padding {
+    padding-bottom: 80px;
+}
+
 .section-title {
     font-size: 40px;
     font-weight: 600;
@@ -486,16 +490,50 @@ footer .footer-content .footer-links img {
 
 /* ==== Contact ====*/
 
-.contact:before {
-	content: '';
-	position: absolute;
-	left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-	background: url('../img/banner/contact-bg.jpg') left no-repeat;
-	background-size: cover;
-	opacity: 0.5;
+.contact-card {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(19, 68, 165, 0.10);
+}
+
+.contact--icon {
+    font-size: 50px;
+}
+
+.contact--icon span {
+    font-weight: 300;
+}
+
+.contact--title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact--icon,
+.contact--title {
+    color: #F46036;
+}
+
+.contact--description {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.contact--description a {
+    color: #333333;
+}
+
+.contact--description a:hover,
+.contact--description a:focus {
+    color: #F46036;
+}
+
+.contact-form-wrapper {
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    padding: 30px;
+    background: #fff;
 }
 
 /* ==== Why Choose ====*/
@@ -523,12 +561,12 @@ footer .footer-content .footer-links img {
 }
 
 .banner-about {
-    background: url('../img/banner/banner.png') no-repeat center center;
+    background: url('../img/banner/about.png') no-repeat center center;
     background-size: cover; 
 }
 
 .banner-contact {
-    background: url('https://www.chennaiuniforms.com/assets/images/slider/contact.jpg') no-repeat center bottom;
+    background: url('../img/banner/contact.png') no-repeat center bottom;
     background-size: cover; 
 }
 
