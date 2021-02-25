@@ -67,10 +67,13 @@
 	}
 	header .navbar.navbar-light .navbar-nav .nav-item.dropdown.show .dropdown-menu a {
     	color: #fff;
-	    font-size: 14px;
+	    font-size: 12px;
 	}
 	header .navbar.navbar-light .navbar-nav .nav-item .nav-link:after {
 		display: none;
+	}
+	.secondary-banner {
+	    height: 350px;
 	}
 }
 
@@ -78,7 +81,7 @@
 
 @media (max-width: 767.98px) {
 	.section-title {
-    	font-size: 30px;
+    	font-size: 20px;
     }
     .counts {
     	margin: 0;
@@ -103,6 +106,9 @@
     .reasons p {
 	    min-height: auto;
 	}
+	.secondary-banner {
+	    height: 250px;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -122,5 +128,8 @@
 	}
 	.card-uniform img {
 	    height: 100px;
+	}
+	.secondary-banner {
+	    height: 200px;
 	}
 }

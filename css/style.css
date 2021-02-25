@@ -516,9 +516,29 @@ footer .footer-content .footer-links img {
     border-radius: 50%;
 }
 
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
+/* ==== Banner ====*/
+
+.secondary-banner {
+    height: 500px;
+}
+
+.banner-about {
+    background: url('../img/banner/banner.png') no-repeat center center;
+    background-size: cover; 
+}
+
+.banner-contact {
+    background: url('https://www.chennaiuniforms.com/assets/images/slider/contact.jpg') no-repeat center bottom;
+    background-size: cover; 
+}
+
+/* ==== About ====*/
+
+.about p {
+    line-height: 30px;
+}
+
+/* ==== Contact ====*/
 /* ==== ====*/
 /* ==== ====*/
 /* ==== ====*/
