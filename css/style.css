@@ -44,7 +44,8 @@ a:focus {
 	border-color: #f58220;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
 	color: #f58220;
 	background: #fff;
 	border-color: #f58220;
@@ -363,8 +364,8 @@ footer .footer-content .footer-links img {
 }
 
 .counts .count-box i {
-    font-size: 42px;
-    margin-right: 20px;
+    font-size: 32px;
+    margin-right: 15px;
     color: #4154f1;
 }
 
@@ -375,7 +376,6 @@ footer .footer-content .footer-links img {
 
 .counts .count-box p {
     margin: 0;
-    font-size: 20px;
 }
 
 /* ==== Ready Products ==== */
@@ -406,7 +406,8 @@ footer .footer-content .footer-links img {
 }
 
 .product-card .product-image {
-	height: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .product-card .product-image img {
@@ -576,17 +577,28 @@ footer .footer-content .footer-links img {
     line-height: 30px;
 }
 
-/* ==== Contact ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
-/* ==== ====*/
+/* ==== Product ==== */
+
+.product-image-wrapper {
+    height: 250px;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.product-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.product-modal .carousel-indicators li {
+    background-color: #010101;
+    width: 10px;
+    height: 10px;
+}
+
+.product-modal p {
+    margin: 15px 0;
+    font-size: 14px;
+}
